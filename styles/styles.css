@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Montserrat", sans-serif;
+}
+
+:root{
+  --red: #c6302c;
+  --black: #121212;
+  --white: #fff;
+  --bg: #eee;
+}
+
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0px;
+  background-color: var(--bg);
+}
+
+.header h3{
+  color: var(--black);
+}
+
+.header nav a{
+  margin: 0 15px;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.header nav a:hover{
+  color: var(--red);
+}
+
+.header .btn-login{
+  font-weight: 600;
+  padding: 7px 12px;
+  border-radius: 5px;
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.header .btn-login:hover{
+  background-color: var(--black);
+  color: var(--white);
+}
+
+/* Banner Main */
+.main{
+  
+  height: 400px;
+}
