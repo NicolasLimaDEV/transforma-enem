@@ -8,6 +8,14 @@ body{
   font-family: "Montserrat", sans-serif;
 }
 
+body, html{
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+}
+
 :root{
   --red: #c6302c;
   --black: #121212;
@@ -21,7 +29,7 @@ body{
   align-items: center;
   padding: 20px 0px;
   background-color: var(--black);
-  height: 70px;
+  height: 80px;
   position: fixed;
   top: 0;
   width: 100vw;
@@ -49,6 +57,7 @@ body{
   font-weight: 600;
   text-decoration: none;
   color: var(--white);
+  transition: 540ms;
 }
 
 .header nav a:hover{
@@ -59,13 +68,28 @@ body{
   font-weight: 600;
   padding: 7px 12px;
   border-radius: 5px;
+  background-color: var(--white);
+  color: var(--red);
+  transition: 540ms;
+}
+
+.header .btn-login:hover{
   background-color: var(--red);
   color: var(--white);
 }
 
-.header .btn-login:hover{
+.header .btn-login-mobile{
+  display: none;
+  font-weight: 600;
+  padding: 7px 12px;
+  border-radius: 5px;
   background-color: var(--white);
   color: var(--red);
+}
+
+.header .btn-login-mobile:hover{
+  background-color: var(--red);
+  color: var(--white);
 }
 
 /* Banner Main */
@@ -86,7 +110,7 @@ body{
 }
 
 .main-left h1{
-  font-size: 45px;
+  font-size: 50px;
   margin-bottom: 20px;
 }
 
@@ -98,6 +122,19 @@ body{
   font-size: 16px;
   border-radius: 5px;
   font-weight: 600;
+}
+
+.main-left ul{
+  margin-bottom: 35px;
+  margin-left: 20px;
+}
+
+.main-left li{
+  margin-bottom: 5px;
+}
+
+.main-left li::marker{
+  color: var(--red);
 }
 
 .main-left .btn-dados:hover{
@@ -113,7 +150,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 50px auto;
+  margin: 65px auto;
   background-color: var(--bg);
 }
 
@@ -143,18 +180,13 @@ body{
   width: 450px;
 }
 
-.link-dados{
-  color: var(--red);
-  font-weight: bold;
-}
-
 /* Patrocinadores */
 .patrocinador{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 50px auto;
+  margin: 65px auto;
 }
 
 .patrocinador h2{

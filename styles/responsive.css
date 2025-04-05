@@ -1,3 +1,65 @@
 @media screen and (max-width: 769px){
+  .header{
+    width: 100%;
+  }
+
+  .header h3{
+    margin-left: 20px;
+    font-size: 16px;
+  }
   
+  .header nav{
+    display: none;
+  }
+
+  .header .btn-login-mobile{
+    display: block;
+    margin-right: 20px;
+    font-size: 13px;
+  }
+
+  /* Main - About */
+  .main, .about{
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .main-left h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .main-left,
+  .main-right,
+  .about-left,
+  .about-right{
+    margin: 0;
+  }
+
+  .main-right img{
+    width: 300px;
+    margin-top: 50px;
+  }
+
+  /* About */
+  .about-right img{
+    width: 300px;
+  }
+
+  .about-left p{
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+  }
+
+  /* Patrocinador */
+  .logos-patrocinadores{
+    flex-direction: column;
+  }
+
+  .logos-patrocinadores img{
+    width: 220px;
+    padding: 25px;
+  }
 }
