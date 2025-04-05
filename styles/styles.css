@@ -11,8 +11,8 @@ body{
 :root{
   --red: #c6302c;
   --black: #121212;
-  --white: #fff;
-  --bg: #eee;
+  --white: #FCFBFC;
+  --bg: #fcfcfc;
 }
 
 .header{
@@ -20,12 +20,16 @@ body{
   justify-content: space-between;
   align-items: center;
   padding: 20px 0px;
-  background-color: var(--bg);
+  background-color: var(--black);
+  height: 70px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
 }
 
 .header h3{
-  color: var(--black);
-  margin-left: 300px;
+  color: var(--white);
+  margin-left: 100px;
 }
 
 .header .enem{
@@ -36,7 +40,7 @@ body{
 }
 
 .header nav{
-  margin-right: 300px;
+  margin-right: 100px;
 }
 
 .header nav a{
@@ -44,7 +48,7 @@ body{
   font-size: 15px;
   font-weight: 600;
   text-decoration: none;
-  color: var(--black);
+  color: var(--white);
 }
 
 .header nav a:hover{
@@ -60,8 +64,8 @@ body{
 }
 
 .header .btn-login:hover{
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--red);
 }
 
 /* Banner Main */
@@ -69,15 +73,16 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 120px;
+  margin-bottom: 50px;
 }
 
 .main-left{
-  margin-left: 300px;
+  margin-left: 100px;
 }
 
 .main-right{
-  margin-right: 300px;
+  margin-right: 100px;
 }
 
 .main-left h1{
@@ -108,16 +113,16 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 100px;
+  margin: 50px auto;
   background-color: var(--bg);
 }
 
 .about-left{
-  margin-left: 300px;
+  margin-left: 100px;
 }
 
 .about-right{
-  margin-right: 300px;
+  margin-right: 100px;
 }
 
 .about-left h2{
@@ -133,9 +138,58 @@ body{
 
 .about-left p{
   margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  width: 450px;
 }
 
 .link-dados{
   color: var(--red);
   font-weight: bold;
+}
+
+/* Patrocinadores */
+.patrocinador{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px auto;
+}
+
+.patrocinador h2{
+  font-size: 30px;
+}
+
+.logos-patrocinadores{
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.logos-patrocinadores img{
+  width: 150px;
+  object-fit: cover;
+  margin: 0 40px;
+}
+
+/* Footer */
+.footer{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #121212;
+  color: #fff;
+}
+
+.footer p{
+  font-size: 14px;
+  margin-top: 5px;
+}
+.footer span{
+  margin-top: 30px;
+  font-size: 13px;
 }
